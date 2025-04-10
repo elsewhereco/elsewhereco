@@ -56,3 +56,76 @@
     <script src="script.js"></script>
 </body>
 </html>
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF9F5;
+    color: #2B2B2B;
+}
+
+header {
+    background-color: #2F5030;
+    padding: 20px;
+    color: #FAF9F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FAF9F5;
+    font-weight: bold;
+}
+
+#hero {
+    background-color: #A15A38;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    color: #2F5030;
+}
+
+footer {
+    background-color: #2F5030;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+// Example: Smooth Scroll on Anchor Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
